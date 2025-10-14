@@ -1,0 +1,12 @@
+services:
+    chromedp:
+        image: chromedp/headless-shell:latest
+        container_name: chromedp
+        restart: unless-stopped
+        networks:
+            - chromedp
+
+networks:
+    chromedp:
+        external: true
+        name: chromedp
