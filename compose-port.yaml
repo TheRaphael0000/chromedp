@@ -1,0 +1,7 @@
+services:
+    chromedp:
+        image: chromedp/headless-shell:latest
+        container_name: chromedp
+        restart: unless-stopped
+        ports:
+          - 9222:9222
