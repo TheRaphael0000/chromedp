@@ -1,6 +1,6 @@
 services:
     chromedp:
-        image: chromedp/headless-shell:latest
+        image: chromedp/headless-shell:147.0.7727.117
         container_name: chromedp
         restart: unless-stopped
         networks:
